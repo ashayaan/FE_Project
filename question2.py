@@ -2,8 +2,12 @@
 # @Author: shayaan
 # @Date:   2019-12-04 21:31:35
 # @Last Modified by:   shayaan
-# @Last Modified time: 2019-12-05 11:47:32
+# @Last Modified time: 2019-12-22 15:37:05
 import math
+import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.patches as mpatches
+
 
 
 class CRR(object):
@@ -24,7 +28,8 @@ class CRR(object):
 		self.u = math.exp(self.vol * math.sqrt(self.deltaT))
 		self.d = math.exp(-self.vol* math.sqrt(self.deltaT))
 		self.p = (math.exp(self.rate*self.deltaT) - self.d) / (self.u - self.d)
-
+		if (self.type == 'American Put'):
+			self.EPA = [[0 for j in range(self.n+1)] for i in range(self.n+1)]
 		self.buildTree()
 		self.terminalPrices()
 
@@ -45,7 +50,11 @@ class CRR(object):
 				self.tree_option[self.n][i] = max(self.tree_security[self.n][i] - self.strike_price,0.0)
 			elif self.type == 'American Put':
 				self.tree_option[self.n][i] = max(self.strike_price - self.tree_security[self.n][i],0.0)
+				if self.tree_option[self.n][i] != 0:
+						self.EPA[self.n][i] = 1
 
+
+	#Function to recursively compute the price of the option
 	def computePrice(self):
 		for i in range(self.n-1,-1,-1):
 			for j in range(i+1):
@@ -58,10 +67,36 @@ class CRR(object):
 					self.tree_option[i][j] = max(self.tree_security[i][j]-self.strike_price,math.exp(-1*self.rate*self.deltaT)*((1-self.p)*self.tree_option[i+1][j] + (self.p)*self.tree_option[i+1][j+1]) )
 				elif self.type == 'American Put':
 					self.tree_option[i][j] = max(self.strike_price-self.tree_security[i][j],math.exp(-1*self.rate*self.deltaT)*((1-self.p)*self.tree_option[i+1][j] + (self.p)*self.tree_option[i+1][j+1]) )
+					#Finding the exercise frontier
+					if self.tree_option[i][j] == (self.strike_price-self.tree_security[i][j]):
+						self.EPA[i][j] = 1
 
+	def exerciseRegion(self):
+		if self.type != 'American Put':
+			print "Cannot plot exercise region"
+			return
+		# i = np.arange(self.n+1)
+		data = np.array(self.tree_security)
+		markers = ['r','b']
+		classes = ["Early exercise",'No early exercise']
+		for i in range(self.n+1):
+			for j in range(i+1):
+				if self.EPA[i][j] == 1:	
+					a = plt.scatter(i,data[i][j],c=markers[0],marker='o')
+				else:
+					b = plt.scatter(i,data[i][j],c=markers[1],marker='^')
+		
+		recs = []
+		for i in range(0,len(markers)):
+			recs.append(mpatches.Rectangle((0,0),1,1,fc=markers[i]))
+		plt.legend(recs,classes,loc=0)
+		plt.xlabel('Number of steps')
+		plt.ylabel('Price of the underlying security')
+		plt.show()
 
 if __name__ == '__main__':
-	test = CRR('European Call',100,100,2,0.05,0.2,2)
+	#Input format security price, strike price, time, rate, volatility, depth of the tree
+	test = CRR('American Put',100,100,2,0.001,0.2,10)
 	test.computePrice()
 	
 	for i in range(test.n+1):
@@ -76,4 +111,16 @@ if __name__ == '__main__':
 			print ("{:0.2f}".format(test.tree_option[i][j])),
 		print
 	print 	
-	print(test.tree_option[0][0])
+
+
+	if (test.type == 'American Put'):
+		for i in range(test.n+1):
+			for j in range(test.n+1):
+				print (test.EPA[i][j]),
+			print
+		print 
+
+		test.exerciseRegion()
+
+
+	print("Price of the option {:0.2f}".format(test.tree_option[0][0]))
