@@ -2,7 +2,7 @@
 # @Author: shayaan
 # @Date:   2019-12-04 21:31:35
 # @Last Modified by:   shayaan
-# @Last Modified time: 2019-12-22 15:37:05
+# @Last Modified time: 2019-12-24 13:27:19
 import math
 import matplotlib.pyplot as plt
 import numpy as np
@@ -96,7 +96,7 @@ class CRR(object):
 
 if __name__ == '__main__':
 	#Input format security price, strike price, time, rate, volatility, depth of the tree
-	test = CRR('American Put',100,100,2,0.001,0.2,10)
+	test = CRR('American Put',100,100,2,0.001,0.2,2)
 	test.computePrice()
 	
 	for i in range(test.n+1):
