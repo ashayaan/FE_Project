@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.23)  26 DEC 2019 12:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.23)  26 DEC 2019 12:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1388,175 +1388,176 @@ File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 File: plots/n_10_r_001.png Graphic file (type png)
 
 <use plots/n_10_r_001.png>
-Package pdftex.def Info: plots/n_10_r_001.png used on input line 407.
+Package pdftex.def Info: plots/n_10_r_001.png used on input line 440.
 (pdftex.def)             Requested size: 187.90271pt x 140.92615pt.
 
 <plots/n_10_r_005.png, id=188, 462.528pt x 346.896pt>
 File: plots/n_10_r_005.png Graphic file (type png)
 
 <use plots/n_10_r_005.png>
-Package pdftex.def Info: plots/n_10_r_005.png used on input line 414.
+Package pdftex.def Info: plots/n_10_r_005.png used on input line 447.
 (pdftex.def)             Requested size: 187.90271pt x 140.92615pt.
 
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 404--418
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 437--451
 []$[]$ $[]$ 
  []
 
 <plots/n_10_r_01.png, id=189, 462.528pt x 346.896pt>
 File: plots/n_10_r_01.png Graphic file (type png)
  <use plots/n_10_r_01.png>
-Package pdftex.def Info: plots/n_10_r_01.png used on input line 423.
+Package pdftex.def Info: plots/n_10_r_01.png used on input line 456.
 (pdftex.def)             Requested size: 187.90271pt x 140.92615pt.
 
 <plots/n_10_r_015.png, id=190, 462.528pt x 346.896pt>
 File: plots/n_10_r_015.png Graphic file (type png)
 
 <use plots/n_10_r_015.png>
-Package pdftex.def Info: plots/n_10_r_015.png used on input line 430.
+Package pdftex.def Info: plots/n_10_r_015.png used on input line 463.
 (pdftex.def)             Requested size: 187.90271pt x 140.92615pt.
 
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 420--434
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 453--467
 []$[]$ $[]$ 
  []
 
+[8]
 File: plots/n_10_r_001.png Graphic file (type png)
-<use plots/n_10_r_001.png>
-Package pdftex.def Info: plots/n_10_r_001.png used on input line 446.
+ <use plots/n_10_r_001.png>
+Package pdftex.def Info: plots/n_10_r_001.png used on input line 479.
 (pdftex.def)             Requested size: 187.90271pt x 140.92615pt.
 
-<plots/n_15_r_001.png, id=191, 462.528pt x 346.896pt>
+<plots/n_15_r_001.png, id=196, 462.528pt x 346.896pt>
 File: plots/n_15_r_001.png Graphic file (type png)
 
 <use plots/n_15_r_001.png>
-Package pdftex.def Info: plots/n_15_r_001.png used on input line 453.
+Package pdftex.def Info: plots/n_15_r_001.png used on input line 486.
 (pdftex.def)             Requested size: 187.90271pt x 140.92615pt.
 
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 443--457
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 476--490
 []$[]$ $[]$ 
  []
 
-<plots/n_20_r_001.png, id=192, 462.528pt x 346.896pt>
+<plots/n_20_r_001.png, id=197, 462.528pt x 346.896pt>
 File: plots/n_20_r_001.png Graphic file (type png)
 
 <use plots/n_20_r_001.png>
-Package pdftex.def Info: plots/n_20_r_001.png used on input line 462.
+Package pdftex.def Info: plots/n_20_r_001.png used on input line 495.
 (pdftex.def)             Requested size: 187.90271pt x 140.92615pt.
 
-<plots/n_25_r_001.png, id=193, 462.528pt x 346.896pt>
+<plots/n_25_r_001.png, id=198, 462.528pt x 346.896pt>
 File: plots/n_25_r_001.png Graphic file (type png)
 
 <use plots/n_25_r_001.png>
-Package pdftex.def Info: plots/n_25_r_001.png used on input line 469.
+Package pdftex.def Info: plots/n_25_r_001.png used on input line 502.
 (pdftex.def)             Requested size: 187.90271pt x 140.92615pt.
 
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 459--473
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 492--506
 []$[]$ $[]$ 
  []
 
-[8 <./plots/n_10_r_001.png> <./plots/n_10_r_005.png> <./plots/n_10_r_01.png> <.
+[9 <./plots/n_10_r_001.png> <./plots/n_10_r_005.png> <./plots/n_10_r_01.png> <.
 /plots/n_10_r_015.png>]
-Underfull \hbox (badness 5288) in paragraph at lines 483--486
+Underfull \hbox (badness 5288) in paragraph at lines 516--519
 \T1/ppl/m/n/12 model, Ti-tan model, Jarrow-Rudd Risk Neu-tral, and CRR model wi
 th drift.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--486
+Underfull \hbox (badness 10000) in paragraph at lines 516--519
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--486
+Underfull \hbox (badness 10000) in paragraph at lines 516--519
 
  []
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 486.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 519.
 
-Overfull \hbox (2.644pt too wide) in paragraph at lines 488--489
+Overfull \hbox (2.644pt too wide) in paragraph at lines 521--522
 \T1/ppl/m/n/12 The fig-ure be-low shows the ex-er-cise fron-tier for an Amer-i-
 can op-tion priced us-ing a Jarrow-
  []
 
-<plots/JRmodel.png, id=204, 462.528pt x 346.896pt>
+<plots/JRmodel.png, id=208, 462.528pt x 346.896pt>
 File: plots/JRmodel.png Graphic file (type png)
  <use plots/JRmodel.png>
-Package pdftex.def Info: plots/JRmodel.png used on input line 492.
+Package pdftex.def Info: plots/JRmodel.png used on input line 525.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
 
-[9 <./plots/n_15_r_001.png> <./plots/n_20_r_001.png> <./plots/n_25_r_001.png>]
-[10 <./plots/JRmodel.png>]
-<plots/Titanmodel.png, id=219, 462.528pt x 346.896pt>
+[10 <./plots/n_15_r_001.png> <./plots/n_20_r_001.png> <./plots/n_25_r_001.png>]
+[11 <./plots/JRmodel.png>]
+<plots/Titanmodel.png, id=223, 462.528pt x 346.896pt>
 File: plots/Titanmodel.png Graphic file (type png)
 
 <use plots/Titanmodel.png>
-Package pdftex.def Info: plots/Titanmodel.png used on input line 543.
+Package pdftex.def Info: plots/Titanmodel.png used on input line 576.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
- <plots/JRRisk.png, id=220, 462.528pt x 346.896pt>
+ <plots/JRRisk.png, id=224, 462.528pt x 346.896pt>
 File: plots/JRRisk.png Graphic file (type png)
 
 <use plots/JRRisk.png>
-Package pdftex.def Info: plots/JRRisk.png used on input line 563.
+Package pdftex.def Info: plots/JRRisk.png used on input line 596.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
- [11 <./plots/Titanmodel.png>]
-<plots/CRRdrift.png, id=227, 462.528pt x 346.896pt>
+ [12 <./plots/Titanmodel.png>]
+<plots/CRRdrift.png, id=232, 462.528pt x 346.896pt>
 File: plots/CRRdrift.png Graphic file (type png)
  <use plots/CRRdrift.png>
-Package pdftex.def Info: plots/CRRdrift.png used on input line 584.
+Package pdftex.def Info: plots/CRRdrift.png used on input line 617.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
 
-[12 <./plots/JRRisk.png>] [13 <./plots/CRRdrift.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 599--601
+[13 <./plots/JRRisk.png>] [14 <./plots/CRRdrift.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 632--634
 
  []
 
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 602.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 635.
 
-Overfull \hbox (25.19121pt too wide) detected at line 620
+Overfull \hbox (25.19121pt too wide) detected at line 653
 [] [] \OT1/zplm/m/n/12 = \OT1/ppl/m/n/12 0
  []
 
-[14
+[15
 
 ]
-Overfull \hbox (29.19115pt too wide) detected at line 637
+Overfull \hbox (29.19115pt too wide) detected at line 670
 [] []
  []
 
-<Explicit.png, id=255, 462.528pt x 346.896pt>
+<Explicit.png, id=259, 462.528pt x 346.896pt>
 File: Explicit.png Graphic file (type png)
  <use Explicit.png>
-Package pdftex.def Info: Explicit.png used on input line 646.
+Package pdftex.def Info: Explicit.png used on input line 679.
 (pdftex.def)             Requested size: 369.90291pt x 284.54124pt.
- [15 <./Explicit.png>] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 714--716
+ [16 <./Explicit.png>] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 747--749
 \T1/ppl/m/n/12 low.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 714--716
+Underfull \hbox (badness 10000) in paragraph at lines 747--749
 
  []
 
-[17] <Implicit_20.png, id=306, 462.528pt x 346.896pt>
+[18] <Implicit_20.png, id=311, 462.528pt x 346.896pt>
 File: Implicit_20.png Graphic file (type png)
  <use Implicit_20.png>
-Package pdftex.def Info: Implicit_20.png used on input line 753.
+Package pdftex.def Info: Implicit_20.png used on input line 786.
 (pdftex.def)             Requested size: 369.90291pt x 284.54124pt.
 
-<Implicit_50.png, id=307, 462.528pt x 346.896pt>
+<Implicit_50.png, id=312, 462.528pt x 346.896pt>
 File: Implicit_50.png Graphic file (type png)
  <use Implicit_50.png>
-Package pdftex.def Info: Implicit_50.png used on input line 759.
+Package pdftex.def Info: Implicit_50.png used on input line 792.
 (pdftex.def)             Requested size: 369.90291pt x 284.54124pt.
- [18 <./Implicit_20.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 763.
- [19 <./Implicit_50.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 763.
+ [19 <./Implicit_20.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 796.
+ [20 <./Implicit_50.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 796.
  (./FE_Project.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 763.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 763.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 796.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 796.
 Package rerunfilecheck Info: File `FE_Project.out' has not changed.
 (rerunfilecheck)             Checksum: 7B8F6660A47B80C6C76814D889128294;873.
 Package logreq Info: Writing requests to 'FE_Project.run.xml'.
@@ -1564,9 +1565,9 @@ Package logreq Info: Writing requests to 'FE_Project.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18377 strings out of 493029
- 282588 string characters out of 6136233
- 906453 words of memory out of 5000000
+ 18378 strings out of 493029
+ 282595 string characters out of 6136233
+ 906462 words of memory out of 5000000
  21451 multiletter control sequences out of 15000+600000
  57547 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1586,10 +1587,10 @@ xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on FE_Project.pdf (20 pages, 514182 bytes).
+Output written on FE_Project.pdf (21 pages, 515273 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
- 353 compressed objects within 4 object streams
- 148 named destinations out of 1000 (max. 500000)
+ 426 PDF objects out of 1000 (max. 8388607)
+ 356 compressed objects within 4 object streams
+ 149 named destinations out of 1000 (max. 500000)
  223 words of extra memory for PDF output out of 10000 (max. 10000000)
 

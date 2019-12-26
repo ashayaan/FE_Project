@@ -394,7 +394,40 @@ SP in the above recursion is the price of the underlying security which we get f
 
 We compared the values of American call and put when the interest rate are taken to zero. The value of the American call option decreased when the interest rate is brought down to zero. Whereas the value of the American option increased when we brought the interest down to zero. 
 
-At zero interest rate the value of both the American call and put option were same. The value is same when interest rate drop to zero because no gain to be made from investing the payoff of an option at the risk free rate.
+From the American call put party we know that.
+\begin{equation*}
+	\begin{aligned}
+		S_t - K \leq C^A_t(T,K,S) - P^A_t(T,K,S)  \leq S_t - Kd(t,T)
+	\end{aligned}
+\end{equation*}
+
+When the interest go down to zero we get that.
+
+\begin{equation*}
+\begin{aligned}
+	C^A_t(T,K,S) - P^A_t(T,K,S) = S_t - K
+\end{aligned}
+\end{equation*}
+
+In the implementation of your model we have set the initial value of the security and strike to be the same, thus at time $t=0$ we get the values of the call and put option to be the same.
+
+\begin{equation*}
+\begin{aligned}
+C^A_0(T,K,S) = P^A_0(T,K,S)
+\end{aligned}
+\end{equation*}
+
+In the cases where the initial value of the security and strike are not same. The value of call and put options are related as follows.
+
+\begin{equation*}
+	\begin{aligned}
+		C^A_0(T,K,S) = P^A_0(T,K,S) + S_0 - K
+	\end{aligned}
+\end{equation*}
+
+From the above relation we can conclude that if the strike is selected such that it is greater than the initial value of the security then the value of American call will be less than an American put when interest rates are zero and vice-versa. 
+
+
 
 \section*{Exercise frontier of an American put}
 \addcontentsline{toc}{section}{\protect\numberline{Exercise Frontier of an American Put}}
