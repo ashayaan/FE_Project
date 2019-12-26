@@ -20,12 +20,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {Exercise Frontier of an American Put}}{8}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {Finite difference method for American option}}{10}{chapter*.13}
+\contentsline {section}{\numberline {Other pricing model}}{9}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {Generating the matrix}}{10}{section*.14}
+\contentsline {subsection}{\numberline {Jarrow-Rudd model}}{9}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {Discretization Scheme}}{10}{section*.15}
+\contentsline {subsection}{\numberline {Titan model}}{10}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {Stability of explicit scheme}}{11}{section*.16}
+\contentsline {subsection}{\numberline {Jarrow Rudd Risk neutral measure}}{11}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {Implicit Euler Scheme}}{12}{section*.18}
+\contentsline {subsection}{\numberline {CRR model with drift}}{12}{section*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {Finite difference method for American option}}{14}{chapter*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {Generating the matrix}}{14}{section*.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {Discretization Scheme}}{14}{section*.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {Stability of explicit scheme}}{15}{section*.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {Implicit Euler Scheme}}{16}{section*.27}

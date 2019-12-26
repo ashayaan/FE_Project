@@ -2,7 +2,7 @@
 # @Author: shayaan
 # @Date:   2019-12-04 21:31:35
 # @Last Modified by:   shayaan
-# @Last Modified time: 2019-12-26 12:25:38
+# @Last Modified time: 2019-12-26 11:38:10
 import math
 import matplotlib.pyplot as plt
 import numpy as np
@@ -10,10 +10,10 @@ import matplotlib.patches as mpatches
 
 
 
-class CRR(object):
-	"""CRR model implementation """
-	def __init__(self,option_type,security_price,strike_price,maturity,rate,vol,depth_of_tree):
-		super(CRR, self).__init__()
+class CRRDrift(object):
+	"""CRRDrift model implementation """
+	def __init__(self,option_type,security_price,strike_price,maturity,rate,vol,depth_of_tree,drift):
+		super(CRRDrift, self).__init__()
 		self.type = option_type
 		self.n = depth_of_tree 
 		self.security_price = security_price 
@@ -21,12 +21,13 @@ class CRR(object):
 		self.maturity = maturity 
 		self.rate = rate 
 		self.vol = vol 
+		self.drift = drift
 		self.tree_security = [[0 for j in range(self.n+1)] for i in range(self.n+1)]
 		self.tree_option = [[0 for j in range(self.n+1)] for i in range(self.n+1)]
 		self.deltaT  = float(self.maturity) / float(self.n)
 		self.discount = math.exp(-self.rate*self.deltaT)
-		self.u = math.exp(self.vol * math.sqrt(self.deltaT))
-		self.d = math.exp(-self.vol* math.sqrt(self.deltaT))
+		self.u = math.exp(self.drift*self.deltaT+ self.vol * math.sqrt(self.deltaT))
+		self.d = math.exp(self.drift*self.deltaT-self.vol* math.sqrt(self.deltaT))
 		self.p = (math.exp(self.rate*self.deltaT) - self.d) / (self.u - self.d)
 		if (self.type == 'American Put'):
 			self.EPA = [[0 for j in range(self.n+1)] for i in range(self.n+1)]
@@ -96,7 +97,7 @@ class CRR(object):
 
 if __name__ == '__main__':
 	#Input format security price, strike price, time, rate, volatility, depth of the tree
-	test = CRR('American Call',100,100,2,0.001,0.2,2)
+	test = CRRDrift('American Put',100,100,2,0.05,0.2,10,-0.1)
 	test.computePrice()
 	
 	for i in range(test.n+1):
